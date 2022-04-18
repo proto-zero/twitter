@@ -20,3 +20,9 @@ The ten most recent tweets about said topic will be displayed.
 - <code>rails db:migrate</code>
 - <code>rails server</code>
 - open localhost:3000
+
+## Developer Notes
+
+- My first attempt at the project was a simple test app using SQLite. The project would have to later be rebuilt using PostGres so as to be supoorted by Heroku.
+
+- 
