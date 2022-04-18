@@ -1,15 +1,19 @@
 <div class="container">
-    <h1>Twitter Selector</h1>
-    <h3>Choose a topic</h3>
-    <div class="topics">
-        <% @topics.each do |topic| %>
-            <a href="/index/<%=topic.id %>" 
-                tabindex="<%=topic.id%>" 
-                title="Recent tweets about the subject of <%=topic.title%>">
-                <button>
-                    <%= topic.title %>
-                </button>
-            </a>
-        <% end %>
+    <div class="header">
+        <h1>Twitter Topic Selector</h1>
+    </div>
+    <div class="options">
+        <h3>Choose a topic</h3>
+        <div class="topics">
+            <% @topics.each do |topic| %>
+                <a href="/index/<%=topic.id %>" 
+                    tabindex="<%=topic.id%>" 
+                    title="Recent tweets about the subject of <%=topic.title%>">
+                    <button>
+                        <%= topic.title %>
+                    </button>
+                </a>
+            <% end %>
+        </div>
     </div>
 </div>

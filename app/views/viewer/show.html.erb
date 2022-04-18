@@ -1,22 +1,26 @@
 <div class="container">
-    <h1>Tweets about "<%= @topic.title %>"</h1>
-    <% @posts.each do |tweet| %>
-        <p><%= tweet.body %></p>
-    <% end %>
-
-    <h1>Twitter Selector</h1>
-    <h3>Choose a topic</h3>
-    
-    <div class="topics">
-        <% @topics.each do |topic| %>
-            <a href="/index/<%=topic.id %>" 
-                tabindex="<%=topic.id%>" 
-                title="Recent tweets about the subject of <%=topic.title%>">
-                <button>
-                    <%= topic.title %>
-                </button>
-            </a>
+    <div class="header">
+        <h1>Tweets about <%= @topic.title %></h1>
+    </div>
+    <div class="options">
+        <h3>Choose a topic</h3>
+        <div class="topics">
+            <% @topics.each do |topic| %>
+                <a href="/index/<%=topic.id %>" 
+                    tabindex="<%=topic.id%>" 
+                    title="Recent tweets about the subject of <%=topic.title%>">
+                    <button>
+                        <%= topic.title %>
+                    </button>
+                </a>
+            <% end %>
+        </div>
+    </div>
+    <div class="tweet_container">
+        <% @posts.each do |tweet| %>
+            <div class="tweets">
+                <p><%= tweet.body %></p>
+            </div>
         <% end %>
     </div>
-   
 </div>
