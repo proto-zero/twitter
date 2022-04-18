@@ -1,24 +1,22 @@
-# README
+# <a href="https://search-twi.herokuapp.com/">Twitter Search</a>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## This app is built with Ruby on Rails with a PostGres Database
 
-Things you may want to cover:
+## Notes
 
-* Ruby version
+Users may select one of three topics. 
 
-* System dependencies
+The ten most recent tweets about said topic will be displayed.
 
-* Configuration
+## Ruby Version
+    3.0.4
 
-* Database creation
+## Postgres
+    1.1
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### If you want your own version of this, you should:
+- have rails installed
+- clone this repo
+- <code>rails db:migrate</code>
+- <code>rails server</code>
+- open localhost:3000
